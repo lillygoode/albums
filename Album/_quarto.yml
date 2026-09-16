@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - covers/*
 
 website:
   title: "Albums"

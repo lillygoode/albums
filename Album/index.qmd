@@ -1,7 +1,34 @@
 ---
-title: "Albums"
+title: "Taylor Swift Album Covers"
 ---
 
-This is a Quarto website.
+Select an album to view its cover art:
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+```{ojs}
+//| echo: false
+viewof selected = Inputs.select(
+  new Map([
+    ["Taylor Swift (2006)", "covers/Taylor Swift.jpg"],
+    ["Fearless (2008)", "covers/Fearless.jpg"],
+    ["Speak Now (2010)", "covers/Speak Now.jpg"],
+    ["Red (2012)", "covers/Red.jpg"],
+    ["1989 (2014)", "covers/1989.jpg"],
+    ["reputation (2017)", "covers/reputation.jpg"],
+    ["Lover (2019)", "covers/Lover.jpg"],
+    ["folklore (2020)", "covers/folklore.jpg"],
+    ["evermore (2020)", "covers/evermore.jpg"],
+    ["Fearless (Taylor’s Version) (2021)", "covers/Fearless Taylors Version.jpg"],
+    ["Red (Taylor’s Version) (2021)", "covers/Red Taylors Version.jpg"],
+    ["Midnights (2022)", "covers/Midnights.jpg"],
+    ["Speak Now (Taylor’s Version) (2023)", "covers/Speak Now Taylors Version.jpg"],
+    ["1989 (Taylor’s Version) (2023)", "covers/1989 Taylors Version.jpg"],
+    ["THE TORTURED POETS DEPARTMENT (2024)", "covers/THE TORTURED POETS DEPARTMENT.jpg"]
+  ]),
+  { label: "Album" }
+)
+
+html`<div style="margin-top: 1rem;">
+  <img src="${selected}" alt="Album cover" style="max-width: 450px; width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+</div>`
+```
+
