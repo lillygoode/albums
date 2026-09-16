@@ -9,8 +9,8 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Albums",
+    "title": "Taylor Swift Album Covers",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Select an album to view its cover art:\n\nviewof selected = Inputs.select(\n  new Map([\n    [\"Taylor Swift (2006)\", \"covers/Taylor Swift.jpg\"],\n    [\"Fearless (2008)\", \"covers/Fearless.jpg\"],\n    [\"Speak Now (2010)\", \"covers/Speak Now.jpg\"],\n    [\"Red (2012)\", \"covers/Red.jpg\"],\n    [\"1989 (2014)\", \"covers/1989.jpg\"],\n    [\"reputation (2017)\", \"covers/reputation.jpg\"],\n    [\"Lover (2019)\", \"covers/Lover.jpg\"],\n    [\"folklore (2020)\", \"covers/folklore.jpg\"],\n    [\"evermore (2020)\", \"covers/evermore.jpg\"],\n    [\"Fearless (Taylor’s Version) (2021)\", \"covers/Fearless Taylors Version.jpg\"],\n    [\"Red (Taylor’s Version) (2021)\", \"covers/Red Taylors Version.jpg\"],\n    [\"Midnights (2022)\", \"covers/Midnights.jpg\"],\n    [\"Speak Now (Taylor’s Version) (2023)\", \"covers/Speak Now Taylors Version.jpg\"],\n    [\"1989 (Taylor’s Version) (2023)\", \"covers/1989 Taylors Version.jpg\"],\n    [\"THE TORTURED POETS DEPARTMENT (2024)\", \"covers/THE TORTURED POETS DEPARTMENT.jpg\"]\n  ]),\n  { label: \"Album\" }\n)\n\nhtml`&lt;div style=\"margin-top: 1rem;\"&gt;\n  &lt;img src=\"${selected}\" alt=\"Album cover\" style=\"max-width: 450px; width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);\"&gt;\n&lt;/div&gt;`"
   }
 ]
